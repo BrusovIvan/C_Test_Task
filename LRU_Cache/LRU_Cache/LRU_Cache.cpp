@@ -1,11 +1,11 @@
 #include<iostream>
+
 #include "LRU.h"
 
 using namespace std;
 const int capacity = 4;
-int main()
-{
-	LRU cache(capacity);////define the capacity
+int main() {
+	LRU cache(capacity); ////define the capacity
 	cache.insert(4);
 	cache.insert(5);
 	cache.insert(7);
@@ -14,4 +14,3 @@ int main()
 	cache.insert(4);
 	cache.print();
 }
-

@@ -14,8 +14,7 @@ void show(int num) {
     cout << num << "  ";
 }
 
-void LRU::insert(int
-    var) {
+void LRU::insert(int var) {
     if (cache.find(var) == cache.end()) { //if the element is now found in the list
         if (cache.size() == length) { //if the cache is full
             int buff = elelents.back();
